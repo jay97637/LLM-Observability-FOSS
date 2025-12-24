@@ -200,11 +200,13 @@ MIT License - see [LICENSE](LICENSE) file
 Built with: [Langtrace](https://langtrace.ai) • [OpenTelemetry](https://opentelemetry.io) • [Jaeger](https://www.jaegertracing.io) • [Google Gemini](https://ai.google.dev)
 
 ---
+## 📬 Contact & Feedback
 
-## ⭐ Show Your Support
+**Author:** Sarvatarshan Sankar  
+**GitHub:** [@sarva-20](https://github.com/sarva-20)
+**LinkedIn** [@Sarvatarshan Sankar](https://www.linkedin.com/in/sarvaponns20/)
 
-If this helped you understand LLM observability, give it a star! ⭐
-
----
-
-**Start simple. Scale as needed. 🚀**
+Questions? Found this helpful?
+- 💬 [Open an Issue](https://github.com/sarva-20/LLM-Observability-FOSS/issues)
+- ⭐ Star this repo if it helped you!
+- 🔄 Share with others learning about LLM observability
