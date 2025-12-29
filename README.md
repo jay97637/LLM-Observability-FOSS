@@ -119,21 +119,61 @@ python chatbot_unified_observability.py
 ## 🏗️ Architecture
 
 ```
-┌─────────────────────────────────────────────────┐
-│           Your LLM Application                  │
-│  ┌──────────┐  ┌──────────┐  ┌──────────┐     │
-│  │Langtrace │  │ OpenTel  │  │OpenLLMetry│     │
-│  └────┬─────┘  └────┬─────┘  └────┬──────┘     │
-│       └─────────────┴─────────────┘             │
-│                     │                           │
-│                OTLP Protocol                    │
-└─────────────────────┼───────────────────────────┘
-                      │
-                      ▼
-         ┌─────────────────────────┐
-         │  Observability Backends  │
-         │  (Jaeger, Grafana, Opik) │
-         └─────────────────────────┘
+flowchart TB
+
+    %% Application Layer
+    subgraph APP["Your LLM Application"]
+        U[User Request]
+        P[Prompt Handling]
+        LLM[LLM Call]
+        TOOLS[Tool / RAG Calls]
+        R[LLM Response]
+    end
+
+    %% Observability Instrumentation
+    subgraph OBS_LAYER["Observability Instrumentation (FOSS)"]
+        LT[LangTrace<br/>LLM & RAG Tracing]
+        OTEL[OpenTelemetry<br/>Standard Traces & Metrics]
+        OLLM[OpenLLMetry<br/>LLM-specific Signals]
+    end
+
+    %% Protocol Layer
+    subgraph PROTOCOL["Telemetry Transport"]
+        OTLP[OTLP Protocol]
+    end
+
+    %% Backend Layer
+    subgraph BACKENDS["Observability Backends"]
+        JAEGER[Jaeger<br/>Trace Visualization]
+        GRAFANA[Grafana<br/>Metrics & Dashboards]
+        OPIK[Opik<br/>Evaluations & Quality Tracking]
+    end
+
+    %% App Flow
+    U --> P --> LLM --> TOOLS --> R
+
+    %% Instrumentation Hooks
+    P -.-> LT
+    LLM -.-> LT
+    TOOLS -.-> LT
+
+    P -.-> OTEL
+    LLM -.-> OTEL
+    R -.-> OTEL
+
+    LLM -.-> OLLM
+    R -.-> OLLM
+
+    %% Telemetry Export
+    LT --> OTLP
+    OTEL --> OTLP
+    OLLM --> OTLP
+
+    %% Backend Ingestion
+    OTLP --> JAEGER
+    OTLP --> GRAFANA
+    OTLP --> OPIK
+
 ```
 
 ---
