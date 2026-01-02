@@ -1,6 +1,6 @@
 # ⚡ Quick Start (5 Minutes)
 
-Scanned the QR code at the meetup? Here's the fastest way to get started:
+Scanned the QR code at the meetup? Here's everything you'll need from scratch to production:
 
 ## 1️⃣ Clone This Repo
 ```bash
